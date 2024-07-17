@@ -23,11 +23,10 @@ const Button: Component<IButtonProps> = (props) => {
       type={props.onClick ? "button" : "submit"}
       disabled={props.isDisabled || props.isLoading}
     >
+      {props.icon}
       <Show when={props.isLoading} fallback={props.title}>
         <span class="loading loading-spinner" />
       </Show>
-
-      {props.icon}
     </button>
   )
 }
