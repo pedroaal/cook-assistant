@@ -2,13 +2,18 @@ import { Router } from "@solidjs/router"
 
 import routes from "~/config/routes"
 import { CoreProvider } from "~/context/core.context"
-
-import "./style/index.scss"
+import Alerts from "./components/core/Alerts"
+import Loader from "./components/core/Loader"
 
 function App() {
   return (
     <CoreProvider>
-      <Router>{routes}</Router>
+      <Alerts />
+      <Loader />
+      <div class="container mx-auto p-5">
+        <header class="text-center">Tauri - Solid</header>
+        <Router>{routes}</Router>
+      </div>
     </CoreProvider>
   )
 }
