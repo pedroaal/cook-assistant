@@ -1,7 +1,7 @@
 {
 	"productName": "cook-assistant",
 	"version": "0.0.0",
-	"identifier": "com.tauri.dev",
+	"identifier": "com.cookAssistant.dev",
 	"build": {
 		"beforeDevCommand": "yarn dev",
 		"devUrl": "http://localhost:1420",
